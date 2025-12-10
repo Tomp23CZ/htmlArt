@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="tomp23cz">
+    <title>BG Analysis</title>
+    <style>
+        body {
+            background-color: hsl(240, 95%, 7%);
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="windows.js" defer></script>
+    <script src="mast.js" defer></script>
+</head>
+<body>
+<svg viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+    <path d="M 0 0 v 600 h 600 v -600 Z" class="bound"></path>
+    <g id="building">
+        <g id="building-top-mast">
+            <path d="M 300 70 v 50 h 40 v -40 Z v 50 h -30 v -30 Z" class="mast-base"></path>
+        </g>
+        <g id="building-core">
+            <path d="M 300 100 v 550 h 200 v -500 Z v 650 h -150 v -550 Z" class="buildingbg"></path>  
+            <g id="windows">
+                <path d="M 151 220 v 15 l 149 -100 l 199 49 v -13 l -199 -53 Z" class="window" id="root-window"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+</body>
+</html>

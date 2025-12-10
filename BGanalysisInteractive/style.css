@@ -1,0 +1,49 @@
+svg * {
+    fill: white;
+    stroke: white;
+}
+.bound {
+    fill: none;
+    stroke: red;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+svg {
+    width: 100vw;
+    height: 100vh;
+}
+
+.buildingbg {
+    stroke: black;
+    fill: #2A2C2E;
+}
+.window {
+    stroke: black;
+    stroke-width: 1;
+    fill: white;
+    --repeat-count: 19;
+    --separation: 10;
+}
+
+:root{
+    --mast-width: 10;
+    --mast-outline-width: 2
+}
+.mast {
+    stroke-width: var(--mast-width) ;
+    fill: none;
+}
+.mast-outline {
+    stroke: black;
+    stroke-width: calc(var(--mast-width) + (var(--mast-outline-width) * 2));
+    fill: none;
+}
+.mast-base {
+    stroke: black;
+    fill: #242628;
+}
