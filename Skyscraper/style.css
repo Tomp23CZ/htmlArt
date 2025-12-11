@@ -5,6 +5,7 @@ svg * {
 .bound {
     fill: none;
     stroke: red;
+    visibility: hidden;
 }
 html, body {
     margin: 0;
@@ -30,19 +31,6 @@ svg {
     --separation: 10;
 }
 
-:root{
-    --mast-width: 10;
-    --mast-outline-width: 2
-}
-.mast {
-    stroke-width: var(--mast-width) ;
-    fill: none;
-}
-.mast-outline {
-    stroke: black;
-    stroke-width: calc(var(--mast-width) + (var(--mast-outline-width) * 2));
-    fill: none;
-}
 .mast-base {
     stroke: black;
     fill: #242628;
